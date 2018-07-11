@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<form id="myForm">
+	<input type="text" name="firstName">
+	<input type="text" name="lastName">
+	<input type="submit" name="Click me!">
+</form>
+
+<script type="text/javascript">
+	var form = document.getElementById('myForm');
+	var firstName;
+	var lastName;
+	form.onsubmit = function(e) {
+		e.preventDefault();
+		firstName = form.firstName.value;
+		lastName = form.lastName.value;
+		console.log('first name: ', form.firstName.value)
+		console.log('last name: ', form.lastName.value)
+		storeValue(firstName, lastName);
+	}
+
+	function storeValue(firstName, lastName) {
+		firstName = firstName;
+		lastName = lastName;
+		console.log('Store value function ==> ', firstName, lastName);
+	}
+
+	while (firstName == ('admin')) 
+	{
+		console.log('aze');	
+	}
+
+</script>
+
+
+</body>
+</html>
